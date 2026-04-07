@@ -199,6 +199,13 @@
       </a>
     </div>
 
+    <div class="profil-card bubble-violet">
+          <h3>📄 Fiche de synthèse</h3>
+          <p>⬇️</p>
+          <a href="IMAGES/Fiche de synthese.pdf" class="btn-cv" target="_blank">
+            Télécharger ma fiche de synthèse
+          </a>
+        </div>
   </div>
 </section>
 
@@ -479,15 +486,33 @@
 
 
     <section id="contact">
-      <h1>Contact</h1>
-      <h2>MAIL⬇️</h2>
-      <h3><strong>abdelkader.allal0492@gmail.com</strong></h3>
-      <h2>Numéro de téléphone ⬇️</h2>
-      <h3> <strong>+33 6 95 61 11 10</strong></h3>
-      <a href="https://www.linkedin.com/in/abdelkader-allal" target="_blank" class="linkedin-ico">
+  <h1>Contact</h1>
+
+  <div class="contact-container">
+   
+    <form action="https://formsubmit.co/abdelkader.allal0492@gmail.com" method="POST" class="contact-form">
+      <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <label for="nom">Votre nom</label>
+      <input type="text" id="nom" name="name" placeholder="Entrez votre nom" required>
+
+      <label for="email">Votre email</label>
+      <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+      <label for="message">Votre message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message" required></textarea>
+
+      <button type="submit" class="btn-cv">Envoyer</button>
+    </form>
+  </div>
+   <a href="https://www.linkedin.com/in/abdelkader-allal" target="_blank" rel="noopener noreferrer" class="linkedin-ico">
         <img src="IMAGES/linkedin.png" alt="Profil LinkedIn de Abdelkader Allal" class="linkedin-img">
       </a>
-    </section>
+    </div>
+
+</section>
 
   </main>
 
